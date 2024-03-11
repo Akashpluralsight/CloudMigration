@@ -1,8 +1,12 @@
-import { Injectable } from '@nestjs/common';
+import {Injectable} from "@nestjs/common"
+
+type Todo={
+  task:string,
+  status:boolean,
+  dueDate:Date
+}
+
 
 @Injectable()
-export class AppService {
-  getHello(): string {
-    return 'Hello World!';
-  }
+export class AppService{
 }
